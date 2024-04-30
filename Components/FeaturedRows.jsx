@@ -2,30 +2,32 @@ import { View, Text, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { ThemeColors } from '../Theme/Index'
 import RestaurantsCard from './RestaurantsCard'
+import tw from 'twrnc';
+import FeaturedData from '../Components/FeaturedData.json'
 
 const FeaturedRows = ({title,description,restaurants}) => {
   return (
     <View>
-      <View className="flex-row justify-between items-center px-4">
+      <View style={tw`flex-row justify-between items-center px-4`}>
         <View>
-            <Text className="font-bold text-lg">
+            <Text style={tw`font-bold text-lg`}>
                 {title}
 
             </Text>
-            <Text className="text-gray-500 text-xs">
+            <Text style={tw`text-gray-500 text-xs`}>
                 {description}
 
             </Text>
             <TouchableOpacity>
-                <Text style={{color:ThemeColors.text}} className="font-semibold">See All</Text>
+                <Text style={[{color:ThemeColors.text},tw`font-semibold`]} >See All</Text>
             </TouchableOpacity>
 
         </View>
         <ScrollView contentContainerStyle={{
             paddingHorizontal:15
-        }} horizontal showsHorizontalScrollIndicator={false}  className="overflow-visible py-5">
+        }} horizontal showsHorizontalScrollIndicator={false}  style={tw`overflow-visible py-5`}>
             {
-                restaurants.map((restuarant,index)=>{
+                FeaturedData?.Featured?.restaurants.map((restuarant,index)=>{
                     return (
                         <RestaurantsCard
                         item={restuarant}

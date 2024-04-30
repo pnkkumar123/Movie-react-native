@@ -1,45 +1,51 @@
-import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native'
-import React, { useState } from 'react'
+import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
+import React, { useState } from 'react';
+import tw from 'twrnc';
+import { CategoriesData } from './FeaturedData';
+
+// Import your category data
+
 
 const Categories = () => {
-    const [activeCategory,setActiveCategory] = useState(null);
+  const [activeCategory, setActiveCategory] = useState(null);
+
   return (
-    <View className="mt-4">
-        <ScrollView
+    <View style={tw`mt-4`}>
+      <ScrollView
+        horizontal
         showsHorizontalScrollIndicator={false}
-        className="overflow-visible"
         contentContainerStyle={{
-           paddingHorizontal:15 
+          paddingHorizontal: 15,
         }}
-        >
-            {
-                Categories.map((category,index)=>{
-                   let isActive = category.id === activeCategory;
-                    let btnClass = isActive ? 'bg-gray-600' : 'bg-gray-200';
-                    let textClass = isActive ? ' font-semibold text-gray-800' : ' text-gray-500';
+      >
+        {/* Map through categoriesData instead of Categories */}
+        {CategoriesData.categories.map((category, index) => {
+          const isActive = category.name === activeCategory;
+          const btnClass = isActive ? 'bg-gray-600' : 'bg-gray-200';
+          const textClass = isActive ? 'font-semibold text-gray-800' : 'text-gray-500';
 
-                   return (
-                        <View key={index} className="flex justify-center items-center mr-6">
-                            <TouchableOpacity
-                            onPress={()=>setActiveCategory(category.id)}
-                            className={"p-1 rounded-full shadow bg-gray-200" + btnClass} 
-                            >
-                                <Image style={{width:45,height:45}}/>
+          return (
+            <View key={index} style={tw`flex justify-center items-center mr-6`}>
+                <TouchableOpacity
+                onPress={()=>setActiveCategory(category.id)}
+                style={[tw`p-1 rounded-full shadow bg-gray-200` + btnClass]} 
+                >
+                    <Image style={{width:45,height:45}}/>
 
-                            </TouchableOpacity>
-                             <Text className={"text-sm" + textClass}>
-                                {category.name}
-                                </Text>   
+                </TouchableOpacity>
+                 <Text className={[tw`text-sm` + textClass]}>
+                    {category.name}
+                    </Text>   
 
-                        </View>
-                    )
-                })
-            }
-
-        </ScrollView>
-      
-    </View>
-  )
+            </View>
+        )
+    })
 }
 
-export default Categories
+</ScrollView>
+
+</View>
+)
+};
+
+export default Categories;

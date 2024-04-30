@@ -1,0 +1,67 @@
+{
+  "Featured": {
+    "restaurants": [
+      {
+        "title": "La Petite Boulangerie",
+        "description": "A cozy French bakery offering a variety of freshly baked bread, pastries, and sandwiches.",
+        "address": "123 Rue de la Baguette, Paris, France",
+        "phone": "+33 1 23 45 67 89",
+        "website": "http://www.lapetiteboulangerie.com"
+      },
+      {
+        "title": "Sushi Satori",
+        "description": "Experience the art of sushi making with our skilled chefs, offering traditional and innovative sushi dishes.",
+        "address": "456 Sushi Street, Tokyo, Japan",
+        "phone": "+81 3 12 34 56 78",
+        "website": "http://www.sushisatori.com"
+      },
+      {
+        "title": "Mama's Pasta House",
+        "description": "Authentic Italian cuisine served in a warm and welcoming atmosphere, featuring a wide selection of pasta dishes and homemade sauces.",
+        "address": "789 Pasta Plaza, Rome, Italy",
+        "phone": "+39 06 78 90 12 34",
+        "website": "http://www.mamaspastahouse.com"
+      }
+    ]
+  },
+  "CategoriesData": {
+    "categories": [
+      {
+        "name": "French Cuisine",
+        "restaurants": [
+          {
+            "title": "La Petite Boulangerie",
+            "description": "A cozy French bakery offering a variety of freshly baked bread, pastries, and sandwiches.",
+            "address": "123 Rue de la Baguette, Paris, France",
+            "phone": "+33 1 23 45 67 89",
+            "website": "http://www.lapetiteboulangerie.com"
+          }
+        ]
+      },
+      {
+        "name": "Japanese Cuisine",
+        "restaurants": [
+          {
+            "title": "Sushi Satori",
+            "description": "Experience the art of sushi making with our skilled chefs, offering traditional and innovative sushi dishes.",
+            "address": "456 Sushi Street, Tokyo, Japan",
+            "phone": "+81 3 12 34 56 78",
+            "website": "http://www.sushisatori.com"
+          }
+        ]
+      },
+      {
+        "name": "Italian Cuisine",
+        "restaurants": [
+          {
+            "title": "Mama's Pasta House",
+            "description": "Authentic Italian cuisine served in a warm and welcoming atmosphere, featuring a wide selection of pasta dishes and homemade sauces.",
+            "address": "789 Pasta Plaza, Rome, Italy",
+            "phone": "+39 06 78 90 12 34",
+            "website": "http://www.mamaspastahouse.com"
+          }
+        ]
+      }
+    ]
+  }
+}
