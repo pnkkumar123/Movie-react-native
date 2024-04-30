@@ -5,8 +5,10 @@ import tw from 'twrnc';
 import * as Icon from "react-native-feather";
 import { ThemeColors } from '../Theme/Index';
 import { useNavigation } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
+import { selectRestaurant } from '../slice/ResturantSlice';
 const CartScreen = () => {
-  const restaurant = Featur.restaurant[0];
+  const restaurant = useSelector(selectRestaurant)
   const navigation = useNavigation();
   
   return (
