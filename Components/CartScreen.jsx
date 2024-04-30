@@ -77,6 +77,12 @@ const CartScreen = () => {
                 source={dish.image}
                 />
                 <Text style={tw`flex-1 font-semibold text-gray-700`}>{dish.name}</Text>
+                <Text style={tw`font-semibold text-base`}>${dish.price}</Text>
+                <TouchableOpacity
+                style={[tw`p-1 rounded-full`,{backgroundColor:ThemeColors.bgColor(1)}]}
+                >
+                    <Icon.Minus strokeWidth={2} height={20} width={20} stroke="white"/>
+                </TouchableOpacity>
 
 
               </View>
@@ -85,6 +91,75 @@ const CartScreen = () => {
         }
 
       </ScrollView>
+      {/* totals */}
+      <View
+      style={[tw`p-6 px-8 rounded-t-3xl `,tw`space-y-4`,{backgroundColor:ThemeColors.bgColor(0.2)}]}
+>
+           <View
+           style={tw`flex-row justify-between`}
+           >
+            <Text
+            style={tw`text-gray-700`}
+            >
+              SubTotal
+
+            </Text>
+            <Text
+            style={tw`text-gray-700`}
+            >
+              $20
+
+            </Text>
+            </View>        
+           <View
+           style={tw`flex-row justify-between`}
+           >
+            <Text
+            style={tw`text-gray-700`}
+            >
+             Delivery fee
+
+            </Text>
+            <Text
+            style={tw`text-gray-700`}
+            >
+              $2
+
+            </Text>
+            </View>        
+           <View
+           style={tw`flex-row justify-between`}
+           >
+            <Text
+            style={tw`text-gray-700 font-extrabold`}
+            >
+              Order Total
+
+            </Text>
+            <Text
+            style={tw`text-gray-700 font-extrabold`}
+            >
+              $30
+
+            </Text>
+            </View>        
+          <View
+          
+          >
+             <TouchableOpacity
+             onPress={()=>navigation.navigate('OrderPreparing')}
+             style={[{backgroundColor:ThemeColors.bgColor(1)},tw`p-3 rounded-full`]}
+             >
+               <Text
+               style={tw`text-white text-center font-bold text-lg`}
+               >
+                Place Order
+               </Text>
+             </TouchableOpacity>
+          </View>
+
+    </View>
+
     </View>
   )
 }
