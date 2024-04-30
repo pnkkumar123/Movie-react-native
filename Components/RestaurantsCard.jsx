@@ -3,12 +3,17 @@ import React from 'react'
 import { ThemeColors } from '../Theme/Index'
 import tw from 'twrnc';
 import * as Icon from "react-native-feather";
+import { useNavigation } from '@react-navigation/native';
 
 const RestaurantsCard = ({item}) => {
+  const navigation = useNavigation
   return (
-    <TouchableWithoutFeedback>
+    <TouchableWithoutFeedback
+    onPress={()=>navigation.navigate('Resturant',{...item})}
+    >
        <View style={[{
-        shadowColor:ThemeColors.bgColor(0.2)
+        shadowColor:ThemeColors.bgColor(0.2),
+        shadowRadius:7,
        },tw`mr-6 bg-white rounded-3xl shadow-lg`]} >
         <Image style={tw`h-36 w-64 rounded-t-3xl`} source={require('../assets/restaurants/combo.webp')}/>
         <View style={tw`px-3 pb-4 space-y-2`}>
