@@ -15,7 +15,7 @@ const OrderPreparing = () => {
     <View style={tw`flex-1 bg-white justify-center items-center`}>
 
        <Image
-       source={require('../assets/image/delivery.gif')}
+       source={require('../assets/Delivery.gif')}
        style={tw`h-80 w-80`}
        />
 

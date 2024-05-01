@@ -3,65 +3,374 @@
     "restaurants": [
       {
         "title": "La Petite Boulangerie",
+        "Category":"non-veg",
         "description": "A cozy French bakery offering a variety of freshly baked bread, pastries, and sandwiches.",
         "address": "123 Rue de la Baguette, Paris, France",
         "phone": "+33 1 23 45 67 89",
-        "website": "http://www.lapetiteboulangerie.com"
+        "website": "http://www.lapetiteboulangerie.com",
+        "Menu": {
+          "title": "Rice",
+          "Dishes": [
+            {
+              "name": "Egg fried rice",
+              "description": "A Delightfully Wholesome Tasty Egg Fried Rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/172789635/photo/asian-chinese-fried-rice-with-vegetable-and-egg-with-chopsticks.jpg?s=1024x1024&w=is&k=20&c=QiDqfvUjHIYGyGNrWgIeRrwg5_q5vGeysNpV230SByI=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg schezwan rice",
+              "description": "A Delightfully Wholesome Tasty Egg Schezwan Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1457157876/photo/chinese-chopsuey-with-egg-and-noodles-served-in-dish-isolated-on-grey-background-top-view-of.jpg?s=1024x1024&w=is&k=20&c=_3vFLXsIvgPUFiKV1BCNlUYzCIsC77FXS48O1DJ_1rI=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg hong kong rice",
+              "description": "A Delightfully Wholesome Tasty Egg Hong Kong Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1897606224/photo/chicken-wings-noodles-set-with-omelette-bread-toast-and-coffee-served-in-dish-isolated-on.jpg?s=1024x1024&w=is&k=20&c=L63UGYciCxMdXacO-TMr9IM9r9W54depUHAtgJCm2sE=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg triple rice",
+              "description": "A Delightfully Wholesome Tasty Egg Triple Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1147944352/photo/rice-roll-wrapped-in-a-plate.jpg?s=1024x1024&w=is&k=20&c=PoB-F3J8ftM7kJYio60SycbVQZ6e0jUsm51XUe0Y0ZY=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg manchurian rice",
+              "description": "A Delightfully Wholesome Tasty Egg Manchurian Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/478043784/photo/cauliflower-or-gobi-manchurian-with-fried-rice.jpg?s=1024x1024&w=is&k=20&c=V79AT2cM-cIWSB1fbMWv1s4jSy8ebjqoydXwwuaE5VQ=",
+              "isVeg": false,
+              "price": 130
+            },
+            {
+              "name": "Egg garlic rice",
+              "description": "A Delightfully Wholesome Tasty Egg Garlic Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1565162725/photo/chilly-garlic-vegetable-rice-mildly-spiced-garlic-flavored-basmati-rice-with-sauteed-bell.jpg?s=1024x1024&w=is&k=20&c=awhLWBxHOeoFlkvWqdankuax23I51kw25KzRqo0rY3g=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg combination rice",
+              "description": "A Delightfully Wholesome Tasty Egg Combination Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1461382673/photo/yellow-rice-with-boiled-egg-and-fried-year.jpg?s=1024x1024&w=is&k=20&c=0yGoQ_2wjpChQ2dFhOJ6Zz4IRnjCM3MOCjeSwV71l8o=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Veg fried rice",
+              "description": "A Delightfully Wholesome Tasty Veg Fried Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1486586640/photo/veg-fried-rice-with-chilli-chicken-food-stock-photo.jpg?s=1024x1024&w=is&k=20&c=qLlCNGBJt7dFfdImdToC_8SiX83QbKFUa-hIi3jBubo=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg schezwan rice",
+              "description": "A Delightfully Wholesome Tasty Veg Schezwan Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1292617507/photo/tasty-veg-schezwan-fried-rice-served-in-bowl-over-a-rustic-wooden-background-indian-cuisine.jpg?s=1024x1024&w=is&k=20&c=60YzuiCFBz2QB7mser7keOO7Z4LsBNHFsKkLy_TyRNY=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg hong kong rice",
+              "description": "A Delightfully Tasty Veg Hong Kong Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/492674114/photo/chinese-cuisine-yumcha-chinese-food.jpg?s=1024x1024&w=is&k=20&c=uZIsXvN2oW7AobtEgkiE_Q4AW4kCJcyTsxQAOyERwDQ=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg triple rice",
+              "description": "A Delightfully Tasty Veg Triple Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1175706298/photo/delicious-risotto-with-chicken-and-green-peas.jpg?s=1024x1024&w=is&k=20&c=T4OMTteBU7Z45wpuPNYmHuOzOJdlo3zqeQloPd4beQY=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg manchurian rice",
+              "description": "A Delightfully Tasty Veg Manchurian Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1208083887/photo/freshly-prepared-veg-manchurian-with-a-bowl-of-fried-rice.jpg?s=1024x1024&w=is&k=20&c=sdglrtk47mbXzgTNSzBG4Bhz06rAfm84RJAGhyxGIU0=",
+              "isVeg": true,
+              "price": 90
+            },
+            {
+              "name": "Veg garlic rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1266312813/photo/pur-veg-indian-food.jpg?s=1024x1024&w=is&k=20&c=q3x7KbDQT0qJXGeX5cwCbdeRf-zux-dIZiqCSgFanU8=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg combination rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1703908963/photo/indian-vegetarian-thali-or-platter-includes-aloo-ki-sabji-dal-rice-roti-bhaji-matar-paneer.jpg?s=1024x1024&w=is&k=20&c=pIivn_0Cniu_myM9VbuM3_zqeNdlkkYI8NN8_Hd6evY=",
+              "isVeg": true,
+              "price": 120
+            }
+          ]
+        }
       },
       {
         "title": "Sushi Satori",
+        "Category":"veg",
         "description": "Experience the art of sushi making with our skilled chefs, offering traditional and innovative sushi dishes.",
         "address": "456 Sushi Street, Tokyo, Japan",
         "phone": "+81 3 12 34 56 78",
-        "website": "http://www.sushisatori.com"
+        "website": "http://www.sushisatori.com",
+        "Menu": {
+          "title": "Rice",
+          "Dishes": [
+            {
+              "name": "Egg fried rice",
+              "description": "A Delightfully Wholesome Tasty Egg Fried Rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/172789635/photo/asian-chinese-fried-rice-with-vegetable-and-egg-with-chopsticks.jpg?s=1024x1024&w=is&k=20&c=QiDqfvUjHIYGyGNrWgIeRrwg5_q5vGeysNpV230SByI=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg schezwan rice",
+              "description": "A Delightfully Wholesome Tasty Egg Schezwan Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1457157876/photo/chinese-chopsuey-with-egg-and-noodles-served-in-dish-isolated-on-grey-background-top-view-of.jpg?s=1024x1024&w=is&k=20&c=_3vFLXsIvgPUFiKV1BCNlUYzCIsC77FXS48O1DJ_1rI=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg hong kong rice",
+              "description": "A Delightfully Wholesome Tasty Egg Hong Kong Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1897606224/photo/chicken-wings-noodles-set-with-omelette-bread-toast-and-coffee-served-in-dish-isolated-on.jpg?s=1024x1024&w=is&k=20&c=L63UGYciCxMdXacO-TMr9IM9r9W54depUHAtgJCm2sE=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg triple rice",
+              "description": "A Delightfully Wholesome Tasty Egg Triple Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1147944352/photo/rice-roll-wrapped-in-a-plate.jpg?s=1024x1024&w=is&k=20&c=PoB-F3J8ftM7kJYio60SycbVQZ6e0jUsm51XUe0Y0ZY=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg manchurian rice",
+              "description": "A Delightfully Wholesome Tasty Egg Manchurian Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/478043784/photo/cauliflower-or-gobi-manchurian-with-fried-rice.jpg?s=1024x1024&w=is&k=20&c=V79AT2cM-cIWSB1fbMWv1s4jSy8ebjqoydXwwuaE5VQ=",
+              "isVeg": false,
+              "price": 130
+            },
+            {
+              "name": "Egg garlic rice",
+              "description": "A Delightfully Wholesome Tasty Egg Garlic Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1565162725/photo/chilly-garlic-vegetable-rice-mildly-spiced-garlic-flavored-basmati-rice-with-sauteed-bell.jpg?s=1024x1024&w=is&k=20&c=awhLWBxHOeoFlkvWqdankuax23I51kw25KzRqo0rY3g=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg combination rice",
+              "description": "A Delightfully Wholesome Tasty Egg Combination Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1461382673/photo/yellow-rice-with-boiled-egg-and-fried-year.jpg?s=1024x1024&w=is&k=20&c=0yGoQ_2wjpChQ2dFhOJ6Zz4IRnjCM3MOCjeSwV71l8o=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Veg fried rice",
+              "description": "A Delightfully Wholesome Tasty Veg Fried Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1486586640/photo/veg-fried-rice-with-chilli-chicken-food-stock-photo.jpg?s=1024x1024&w=is&k=20&c=qLlCNGBJt7dFfdImdToC_8SiX83QbKFUa-hIi3jBubo=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg schezwan rice",
+              "description": "A Delightfully Wholesome Tasty Veg Schezwan Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1292617507/photo/tasty-veg-schezwan-fried-rice-served-in-bowl-over-a-rustic-wooden-background-indian-cuisine.jpg?s=1024x1024&w=is&k=20&c=60YzuiCFBz2QB7mser7keOO7Z4LsBNHFsKkLy_TyRNY=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg hong kong rice",
+              "description": "A Delightfully Tasty Veg Hong Kong Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/492674114/photo/chinese-cuisine-yumcha-chinese-food.jpg?s=1024x1024&w=is&k=20&c=uZIsXvN2oW7AobtEgkiE_Q4AW4kCJcyTsxQAOyERwDQ=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg triple rice",
+              "description": "A Delightfully Tasty Veg Triple Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1175706298/photo/delicious-risotto-with-chicken-and-green-peas.jpg?s=1024x1024&w=is&k=20&c=T4OMTteBU7Z45wpuPNYmHuOzOJdlo3zqeQloPd4beQY=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg manchurian rice",
+              "description": "A Delightfully Tasty Veg Manchurian Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1208083887/photo/freshly-prepared-veg-manchurian-with-a-bowl-of-fried-rice.jpg?s=1024x1024&w=is&k=20&c=sdglrtk47mbXzgTNSzBG4Bhz06rAfm84RJAGhyxGIU0=",
+              "isVeg": true,
+              "price": 90
+            },
+            {
+              "name": "Veg garlic rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1266312813/photo/pur-veg-indian-food.jpg?s=1024x1024&w=is&k=20&c=q3x7KbDQT0qJXGeX5cwCbdeRf-zux-dIZiqCSgFanU8=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg combination rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1703908963/photo/indian-vegetarian-thali-or-platter-includes-aloo-ki-sabji-dal-rice-roti-bhaji-matar-paneer.jpg?s=1024x1024&w=is&k=20&c=pIivn_0Cniu_myM9VbuM3_zqeNdlkkYI8NN8_Hd6evY=",
+              "isVeg": true,
+              "price": 120
+            }
+          ]
+        }
       },
       {
         "title": "Mama's Pasta House",
+        "Category":"veg",
         "description": "Authentic Italian cuisine served in a warm and welcoming atmosphere, featuring a wide selection of pasta dishes and homemade sauces.",
         "address": "789 Pasta Plaza, Rome, Italy",
         "phone": "+39 06 78 90 12 34",
-        "website": "http://www.mamaspastahouse.com"
-      }
-    ]
-  },
-  "CategoriesData": {
-    "categories": [
-      {
-        "name": "French Cuisine",
-        "restaurants": [
-          {
-            "title": "La Petite Boulangerie",
-            "description": "A cozy French bakery offering a variety of freshly baked bread, pastries, and sandwiches.",
-            "address": "123 Rue de la Baguette, Paris, France",
-            "phone": "+33 1 23 45 67 89",
-            "website": "http://www.lapetiteboulangerie.com"
-          }
-        ]
-      },
-      {
-        "name": "Japanese Cuisine",
-        "restaurants": [
-          {
-            "title": "Sushi Satori",
-            "description": "Experience the art of sushi making with our skilled chefs, offering traditional and innovative sushi dishes.",
-            "address": "456 Sushi Street, Tokyo, Japan",
-            "phone": "+81 3 12 34 56 78",
-            "website": "http://www.sushisatori.com"
-          }
-        ]
-      },
-      {
-        "name": "Italian Cuisine",
-        "restaurants": [
-          {
-            "title": "Mama's Pasta House",
-            "description": "Authentic Italian cuisine served in a warm and welcoming atmosphere, featuring a wide selection of pasta dishes and homemade sauces.",
-            "address": "789 Pasta Plaza, Rome, Italy",
-            "phone": "+39 06 78 90 12 34",
-            "website": "http://www.mamaspastahouse.com"
-          }
-        ]
+        "website": "http://www.mamaspastahouse.com",
+        "Menu": {
+          "title": "Rice",
+          "Dishes": [
+            {
+              "name": "Egg fried rice",
+              "description": "A Delightfully Wholesome Tasty Egg Fried Rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/172789635/photo/asian-chinese-fried-rice-with-vegetable-and-egg-with-chopsticks.jpg?s=1024x1024&w=is&k=20&c=QiDqfvUjHIYGyGNrWgIeRrwg5_q5vGeysNpV230SByI=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg schezwan rice",
+              "description": "A Delightfully Wholesome Tasty Egg Schezwan Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1457157876/photo/chinese-chopsuey-with-egg-and-noodles-served-in-dish-isolated-on-grey-background-top-view-of.jpg?s=1024x1024&w=is&k=20&c=_3vFLXsIvgPUFiKV1BCNlUYzCIsC77FXS48O1DJ_1rI=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg hong kong rice",
+              "description": "A Delightfully Wholesome Tasty Egg Hong Kong Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1897606224/photo/chicken-wings-noodles-set-with-omelette-bread-toast-and-coffee-served-in-dish-isolated-on.jpg?s=1024x1024&w=is&k=20&c=L63UGYciCxMdXacO-TMr9IM9r9W54depUHAtgJCm2sE=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg triple rice",
+              "description": "A Delightfully Wholesome Tasty Egg Triple Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1147944352/photo/rice-roll-wrapped-in-a-plate.jpg?s=1024x1024&w=is&k=20&c=PoB-F3J8ftM7kJYio60SycbVQZ6e0jUsm51XUe0Y0ZY=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg manchurian rice",
+              "description": "A Delightfully Wholesome Tasty Egg Manchurian Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/478043784/photo/cauliflower-or-gobi-manchurian-with-fried-rice.jpg?s=1024x1024&w=is&k=20&c=V79AT2cM-cIWSB1fbMWv1s4jSy8ebjqoydXwwuaE5VQ=",
+              "isVeg": false,
+              "price": 130
+            },
+            {
+              "name": "Egg garlic rice",
+              "description": "A Delightfully Wholesome Tasty Egg Garlic Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1565162725/photo/chilly-garlic-vegetable-rice-mildly-spiced-garlic-flavored-basmati-rice-with-sauteed-bell.jpg?s=1024x1024&w=is&k=20&c=awhLWBxHOeoFlkvWqdankuax23I51kw25KzRqo0rY3g=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Egg combination rice",
+              "description": "A Delightfully Wholesome Tasty Egg Combination Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1461382673/photo/yellow-rice-with-boiled-egg-and-fried-year.jpg?s=1024x1024&w=is&k=20&c=0yGoQ_2wjpChQ2dFhOJ6Zz4IRnjCM3MOCjeSwV71l8o=",
+              "isVeg": false,
+              "price": 120
+            },
+            {
+              "name": "Veg fried rice",
+              "description": "A Delightfully Wholesome Tasty Veg Fried Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1486586640/photo/veg-fried-rice-with-chilli-chicken-food-stock-photo.jpg?s=1024x1024&w=is&k=20&c=qLlCNGBJt7dFfdImdToC_8SiX83QbKFUa-hIi3jBubo=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg schezwan rice",
+              "description": "A Delightfully Wholesome Tasty Veg Schezwan Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1292617507/photo/tasty-veg-schezwan-fried-rice-served-in-bowl-over-a-rustic-wooden-background-indian-cuisine.jpg?s=1024x1024&w=is&k=20&c=60YzuiCFBz2QB7mser7keOO7Z4LsBNHFsKkLy_TyRNY=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg hong kong rice",
+              "description": "A Delightfully Tasty Veg Hong Kong Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/492674114/photo/chinese-cuisine-yumcha-chinese-food.jpg?s=1024x1024&w=is&k=20&c=uZIsXvN2oW7AobtEgkiE_Q4AW4kCJcyTsxQAOyERwDQ=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg triple rice",
+              "description": "A Delightfully Tasty Veg Triple Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1175706298/photo/delicious-risotto-with-chicken-and-green-peas.jpg?s=1024x1024&w=is&k=20&c=T4OMTteBU7Z45wpuPNYmHuOzOJdlo3zqeQloPd4beQY=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg manchurian rice",
+              "description": "A Delightfully Tasty Veg Manchurian Rice.",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1208083887/photo/freshly-prepared-veg-manchurian-with-a-bowl-of-fried-rice.jpg?s=1024x1024&w=is&k=20&c=sdglrtk47mbXzgTNSzBG4Bhz06rAfm84RJAGhyxGIU0=",
+              "isVeg": true,
+              "price": 90
+            },
+            {
+              "name": "Veg garlic rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1266312813/photo/pur-veg-indian-food.jpg?s=1024x1024&w=is&k=20&c=q3x7KbDQT0qJXGeX5cwCbdeRf-zux-dIZiqCSgFanU8=",
+              "isVeg": true,
+              "price": 120
+            },
+            {
+              "name": "Veg combination rice",
+              "inStock": false,
+              "imageUrl":"https://media.istockphoto.com/id/1703908963/photo/indian-vegetarian-thali-or-platter-includes-aloo-ki-sabji-dal-rice-roti-bhaji-matar-paneer.jpg?s=1024x1024&w=is&k=20&c=pIivn_0Cniu_myM9VbuM3_zqeNdlkkYI8NN8_Hd6evY=",
+              "isVeg": true,
+              "price": 120
+            }
+          ]
+        }
       }
     ]
   }
 }
+

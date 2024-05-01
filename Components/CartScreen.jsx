@@ -1,16 +1,34 @@
 import { View, Text, TouchableOpacity,ScrollView, Image } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import FeaturedRows from './FeaturedRows'
 import tw from 'twrnc';
 import * as Icon from "react-native-feather";
 import { ThemeColors } from '../Theme/Index';
 import { useNavigation } from '@react-navigation/native';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { selectRestaurant } from '../slice/ResturantSlice';
+import { removeFromCart, selectCartItems, selectCartTotal } from '../slice/CartSlice';
 const CartScreen = () => {
+  const dispatch = useDispatch();
   const restaurant = useSelector(selectRestaurant)
   const navigation = useNavigation();
-  
+  const cartItems = useSelector(selectCartItems);
+  const cartTotal = useSelector(selectCartTotal)
+  const [groupedItems,setGroupedItems]= useState({})
+  const deliveryFee = 2;
+
+  useEffect(()=>{
+   const items = cartItems.reduce((group,item)=>{
+   if(group[item.id]){
+      group[item.id].push(item)
+   }else{
+    group[item.id] = [item];
+   }
+   return group
+   },{})
+   setGroupedItems(items)
+  },[cartItems])
+
   return (
     <View style={tw`bg-white flex-1`}>
      {/* back button */}
@@ -40,7 +58,7 @@ const CartScreen = () => {
       style={[{backgroundColor:ThemeColors.bgColor(0.2)},tw`flex-row px-4 items-center`]}
       >
          <Image
-         source={require('../assets/restaurants')}
+         source={require('../assets/restaurants/ImageFood.jpg')}
          style={tw`w-20 h-20 rounded-full`}
          
          />
@@ -64,15 +82,16 @@ const CartScreen = () => {
         style={tw`bg-white pt-5`}
       >
         {
-          Resturant.dishes.map((dish,index)=>{
-            return(
+         Object.entries(groupedItems).map(({key,items})=>{
+          let dish = items[0]; 
+          return(
               <View
-              key={index}
+              key={key}
               style={[tw`space-x-3`,tw`flex-row items-center py-2 px-4 bg-white rounded-3xl mx-2 mb-3 shadow-md`]}
               >
                 <Text style={[tw`font-bold`,{color:ThemeColors.text}]}>
 
-                  2 x
+                 {items.length} x
                 </Text>
                 <Image
                 style={tw`h-14 w-14 rounded-full`}
@@ -81,6 +100,7 @@ const CartScreen = () => {
                 <Text style={tw`flex-1 font-semibold text-gray-700`}>{dish.name}</Text>
                 <Text style={tw`font-semibold text-base`}>${dish.price}</Text>
                 <TouchableOpacity
+                onPress={()=>dispatch(removeFromCart({id:dish.id}))}
                 style={[tw`p-1 rounded-full`,{backgroundColor:ThemeColors.bgColor(1)}]}
                 >
                     <Icon.Minus strokeWidth={2} height={20} width={20} stroke="white"/>
@@ -109,7 +129,7 @@ const CartScreen = () => {
             <Text
             style={tw`text-gray-700`}
             >
-              $20
+              ${cartTotal}
 
             </Text>
             </View>        
@@ -125,7 +145,7 @@ const CartScreen = () => {
             <Text
             style={tw`text-gray-700`}
             >
-              $2
+              ${deliveryFee}
 
             </Text>
             </View>        
@@ -141,7 +161,7 @@ const CartScreen = () => {
             <Text
             style={tw`text-gray-700 font-extrabold`}
             >
-              $30
+              ${deliveryFee + cartTotal}
 
             </Text>
             </View>        

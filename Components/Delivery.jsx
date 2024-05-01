@@ -5,11 +5,19 @@ import { useNavigation } from '@react-navigation/native';
 import MapView from 'react-native-maps';
 import { ThemeColors } from '../Theme/Index';
 import * as Icon from "react-native-feather";
+import { useDispatch, useSelector } from 'react-redux';
+import { selectRestaurant } from '../slice/ResturantSlice';
+import { emptyCart } from '../slice/CartSlice';
 
 const Delivery = () => {
     const navigation = useNavigation();
-    const restaurant = featured.restaurant[0];
-  return (
+    const restaurant = useSelector(selectRestaurant)
+ const dispatch = useDispatch();
+    const cancelOrder = ()=>{
+  navigation.navigate('home');
+  dispatch(emptyCart());
+ }
+    return (
     <View style={tw`flex-1`}>
       {/* map view */}
       <MapView
@@ -24,8 +32,8 @@ const Delivery = () => {
       >
         <Marker
         coodrinate={{
-            latitude:restaurant.lat,
-            longitude:restaurant.lng
+            latitude:'36.502064014356',
+            longitude:'-79.743901487103'
         }}
         title={restaurant.name}
         description={restaurant.description}
@@ -55,7 +63,7 @@ const Delivery = () => {
                   Your order is own its way,
                 </Text>
                 <Image
-                style={tw`w-24 h24`} source={require('../assets/images')}
+                style={tw`w-24 h24`} source={require('../assets/restaurants/combo.webp')}
                 />
 
               </View>
@@ -68,7 +76,7 @@ const Delivery = () => {
                  <Image
                  
                  style={tw`h-16 w-16 rounded-full `}
-                 source={require("../assets")}
+                 source={require("../assets/restaurants/burger.jpeg")}
                  />
                 </View>
                 <View
@@ -93,7 +101,7 @@ const Delivery = () => {
                       <Icon.Phone fill={ThemeColors.bgColor(1)} stroke={'red'}  strokeWidth={5}/>
                     </TouchableOpacity>
                     <TouchableOpacity
-                    onPress={()=>navigation.navigate('Home')}
+                    onPress={cancelOrder}
                     style={tw`bg-white p-2 rounded-full`}
                     >
                       <Icon.X fill={ThemeColors.bgColor(1)} stroke={'red'}  strokeWidth={4}/>

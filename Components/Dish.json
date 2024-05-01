@@ -1,0 +1,104 @@
+{
+    "Menu": {
+      "title": "Rice",
+      "Dishes": [
+        {
+          "name": "Egg fried rice",
+          "description": "A Delightfully Wholesome Tasty Egg Fried Rice",
+          "inStock": false,
+          "isVeg": false,
+          "price": 120
+        },
+        {
+          "name": "Egg schezwan rice",
+          "description": "A Delightfully Wholesome Tasty Egg Schezwan Rice.",
+          "inStock": false,
+          "isVeg": false,
+          "price": 120
+        },
+        {
+          "name": "Egg hong kong rice",
+          "description": "A Delightfully Wholesome Tasty Egg Hong Kong Rice.",
+          "inStock": false,
+          "isVeg": false,
+          "price": 120
+        },
+        {
+          "name": "Egg triple rice",
+          "description": "A Delightfully Wholesome Tasty Egg Triple Rice.",
+          "inStock": false,
+          "isVeg": false,
+          "price": 120
+        },
+        {
+          "name": "Egg manchurian rice",
+          "description": "A Delightfully Wholesome Tasty Egg Manchurian Rice.",
+          "inStock": false,
+          "isVeg": false,
+          "price": 130
+        },
+        {
+          "name": "Egg garlic rice",
+          "description": "A Delightfully Wholesome Tasty Egg Garlic Rice.",
+          "inStock": false,
+          "isVeg": false,
+          "price": 120
+        },
+        {
+          "name": "Egg combination rice",
+          "description": "A Delightfully Wholesome Tasty Egg Combination Rice.",
+          "inStock": false,
+          "isVeg": false,
+          "price": 120
+        },
+        {
+          "name": "Veg fried rice",
+          "description": "A Delightfully Wholesome Tasty Veg Fried Rice.",
+          "inStock": false,
+          "isVeg": true,
+          "price": 120
+        },
+        {
+          "name": "Veg schezwan rice",
+          "description": "A Delightfully Wholesome Tasty Veg Schezwan Rice.",
+          "inStock": false,
+          "isVeg": true,
+          "price": 120
+        },
+        {
+          "name": "Veg hong kong rice",
+          "description": "A Delightfully Tasty Veg Hong Kong Rice.",
+          "inStock": false,
+          "isVeg": true,
+          "price": 120
+        },
+        {
+          "name": "Veg triple rice",
+          "description": "A Delightfully Tasty Veg Triple Rice.",
+          "inStock": false,
+          "isVeg": true,
+          "price": 120
+        },
+        {
+          "name": "Veg manchurian rice",
+          "description": "A Delightfully Tasty Veg Manchurian Rice.",
+          "inStock": false,
+          "isVeg": true,
+          "price": 90
+        },
+        {
+          "name": "Veg garlic rice",
+          "inStock": false,
+          "isVeg": true,
+          "price": 120
+        },
+        {
+          "name": "Veg combination rice",
+          "inStock": false,
+          "isVeg": true,
+          "price": 120
+        }
+      ]
+    }
+  }
+  

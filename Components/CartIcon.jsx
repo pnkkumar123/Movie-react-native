@@ -3,10 +3,15 @@ import React from 'react'
 import tw from 'twrnc'
 import { ThemeColors } from '../Theme/Index'
 import { useNavigation } from '@react-navigation/native'
+import { useSelector } from 'react-redux'
+import { selectCartItems, selectCartTotal } from '../slice/CartSlice'
 
 
 const CartIcon = () => {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
+  const cartItems = useSelector(selectCartItems);
+ const cartTotal = useSelector(selectCartTotal)
+  if(!cartItems.length) return ;
   return (
     <View style={tw`absolute bottom-5 w-full z-50`}>
         <TouchableOpacity
@@ -19,7 +24,7 @@ const CartIcon = () => {
                 <Text
                 style={tw`font-extrabold text-white text-lg`}
                 >
-                    3
+                   {cartItems.length}
                 </Text>
             </View>
                  <Text
@@ -30,7 +35,7 @@ const CartIcon = () => {
                  <Text
                  style={tw`font-extrabold text-white text-lg`}
                  >
-                      ${23}
+                      ${cartTotal}
                  </Text>
         </TouchableOpacity>
     
